@@ -47,15 +47,15 @@ Using the below liquid code to dynamically pull in the collection image, but pro
 
 ```liquid
 {% liquid
-assign productHandle = "Blue T-Shirt" | handleize
-assign productData = all_products[productHandle]
+  assign productHandle = "Blue T-Shirt" | handleize
+  assign productData = all_products[productHandle]
 
-assign id = productData.id
-assign title = productData.title
-assign handle = productData.handle
-assign price = productData.price
-assign url = productData.url
-assign image = productData.featured_image
+  assign id = productData.id
+  assign title = productData.title
+  assign handle = productData.handle
+  assign price = productData.price
+  assign url = productData.url
+  assign image = productData.featured_image
 %}
 
 ```
